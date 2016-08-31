@@ -19,9 +19,9 @@ class ModSecurity < Formula
 
   bottle do
     cellar :any
-    sha256 "778b6c2cf9e7da31a0d14bc8c98a681294c567be2c0d55c83e761e1abb181a8d" => :el_capitan
-    sha256 "13b7104c8843d8408deb2e61211d6c9a37e224dfc4cfde32c1f2b249ca6c8fa5" => :yosemite
-    sha256 "175a0c7372763968f5610cc3685ab8ccb5fdb14c4e799e32e531835b5f8c5922" => :mavericks
+    sha256 "d4c2b06ad033fe4263401c5e4e0b65bdee7770bc61ff19a34e5bd6ff168c545c" => :el_capitan
+    sha256 "3d9437bf355784c5c63134de2602748e3ac6d4961eecb4c4a172f41e06edbd61" => :yosemite
+    sha256 "5277e3a645a6de545f576140259dfd2fc4d17b9a2bd159a4b83d3ca4447bf200" => :mavericks
   end
 
   option "with-homebrew-apr", "Use Homebrew apr"
