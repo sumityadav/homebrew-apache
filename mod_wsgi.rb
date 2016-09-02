@@ -19,9 +19,9 @@ class ModWsgi < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "30d824c322650414f67b17ae55d21c1e01236626765d31a522a2882c4b405d5c" => :el_capitan
-    sha256 "4771dec94bd74cd9b8a802872c5504b5b8bdfbc1268f41967299455f9e802f8e" => :yosemite
-    sha256 "b7873449c8263f3390a3165cb64dc12ca16fabbe731873955aa52d02cee6a23f" => :mavericks
+    sha256 "13530839dc2c918d62c9e6d1003a0b01cb6e5975dd70b26cf10b8b0d8ce0a92a" => :el_capitan
+    sha256 "94ceae5a9764a53c096359fb128cd560b09806b9ce52cdede4b20f14057663e4" => :yosemite
+    sha256 "9031d1bab170f5ec258c75f61267402ae9c8fce413ee2d7acea80eeb05e0c8b7" => :mavericks
   end
 
   option "with-homebrew-httpd22", "Use Homebrew Apache httpd 2.2"
