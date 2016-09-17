@@ -3,6 +3,7 @@ class Ab < Formula
   homepage "https://httpd.apache.org/docs/trunk/programs/ab.html"
   url "https://archive.apache.org/dist/httpd/httpd-2.4.16.tar.bz2"
   sha256 "ac660b47aaa7887779a6430404dcb40c0b04f90ea69e7bd49a40552e9ff13743"
+  revision 1
 
   bottle do
     cellar :any
