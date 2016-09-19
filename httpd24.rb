@@ -3,6 +3,7 @@ class Httpd24 < Formula
   homepage "https://httpd.apache.org/"
   url "https://archive.apache.org/dist/httpd/httpd-2.4.23.tar.bz2"
   sha256 "0c1694b2aad7765896faf92843452ee2555b9591ae10d4f19b245f2adfe85e58"
+  revision 1
 
   bottle do
     sha256 "0e2df29c32b614ea1afee70fbff359668ac0070a748ba15261db5846b49df5e6" => :el_capitan
