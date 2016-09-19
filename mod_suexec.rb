@@ -20,10 +20,16 @@ class ModSuexec < Formula
   when :el_capitan
     url "https://archive.apache.org/dist/httpd/httpd-2.4.16.tar.bz2"
     sha256 "ac660b47aaa7887779a6430404dcb40c0b04f90ea69e7bd49a40552e9ff13743"
+  when :sierra
+    url "https://archive.apache.org/dist/httpd/httpd-2.4.23.tar.bz2"
+    sha256 "0c1694b2aad7765896faf92843452ee2555b9591ae10d4f19b245f2adfe85e58"
   end
+
+  bottle :unneeded
 
   depends_on "libtool" => :build
   depends_on "pcre"
+  depends_on :apr => :build
 
   def install
     system "./configure",
@@ -35,7 +41,9 @@ class ModSuexec < Formula
       "--with-suexec-uidmin=100",
       "--with-suexec-gidmin=20",
       "--with-suexec-logfile=suexec_log",
-      "--with-suexec-safepath=/usr/local/bin:/usr/bin:/bin"
+      "--with-suexec-safepath=/usr/local/bin:/usr/bin:/bin",
+      "--with-apr=#{Formula["apr"].opt_prefix}",
+      "--with-apr-util=#{Formula["apr-util"].opt_prefix}"
 
     args = "CC=#{ENV.cc}" if MacOS.version >= :lion
     system "make", *args
