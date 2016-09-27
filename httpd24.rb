@@ -6,9 +6,9 @@ class Httpd24 < Formula
   revision 2
 
   bottle do
-    sha256 "eed92b572497fc24bf32efd4633205d18c248e38ae9bc5a2efa3acb369e6ac82" => :sierra
-    sha256 "429023192103e90154cecf5e67db83fdf20b2c41a64f0024c390298cbc6fbf6c" => :el_capitan
-    sha256 "bf4badd3cd9a3b562b23b34c82a5c559699e70cb135e66c5bacee272dcb61b4d" => :yosemite
+    sha256 "3cf05ee1dae35c93aadc8c27d32fa88b998af6e7e387420c0b372e38d298b308" => :sierra
+    sha256 "41cd39db06ddbbc941e736c0700a9b218899239259eafb900f35f843b5a72cea" => :el_capitan
+    sha256 "bf5abcffd2fbfe3b592b21f581a7cff8e17ded70fd2d827dc0bb0fd33fd8af18" => :yosemite
   end
 
   conflicts_with "homebrew/apache/httpd22", :because => "different versions of the same software"
