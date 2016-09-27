@@ -44,11 +44,11 @@ class Httpd24 < Formula
 
     # fix non-executable files in sbin dir (for brew audit)
     inreplace "support/Makefile.in",
-      '$(DESTDIR)$(sbindir)/envvars', '$(DESTDIR)$(sysconfdir)/envvars'
+      "$(DESTDIR)$(sbindir)/envvars", "$(DESTDIR)$(sysconfdir)/envvars"
     inreplace "support/Makefile.in",
-      'envvars-std $(DESTDIR)$(sbindir);', 'envvars-std $(DESTDIR)$(sysconfdir);'
+      "envvars-std $(DESTDIR)$(sbindir);", "envvars-std $(DESTDIR)$(sysconfdir);"
     inreplace "support/apachectl.in",
-      '@exp_sbindir@/envvars', "#{etc}/apache2/2.4/envvars"
+      "@exp_sbindir@/envvars", "#{etc}/apache2/2.4/envvars"
 
     # install custom layout
     File.open("config.layout", "w") { |f| f.write(httpd_layout) }
