@@ -11,7 +11,7 @@ brew install https://raw.githubusercontent.com/Homebrew/homebrew-apache/master/<
 ```
 
 ## Documentation
-`brew help`, `man brew` or check [Homebrew's documentation](https://github.com/Homebrew/brew/tree/master/share/doc/homebrew#readme).
+`brew help`, `man brew` or check [Homebrew's documentation](https://github.com/Homebrew/brew/tree/master/docs#readme).
 
 ## Configuration
 After installing `httpd22` or `httpd24`, the configuration files will be in `$(brew --prefix)/etc/apache2/2.2` and `$(brew --prefix)/etc/apache2/2.4`, respectively.
