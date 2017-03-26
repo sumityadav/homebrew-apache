@@ -6,9 +6,9 @@ class Ab < Formula
 
   bottle do
     cellar :any
-    sha256 "e2ace1d25594d170f2f65fb0fd672fe1c83eda535cc1e8bd03d4e97f2205cb77" => :sierra
-    sha256 "dc21fd2be82b6b9f1cd1c08234f1379234fccc643dde354d0c6806730768bda7" => :el_capitan
-    sha256 "eec4c9e6eba01ab9f7221ecd165703ea31cd43bc7272d162fdea7e783c1974f3" => :yosemite
+    sha256 "e1be1ce5f10ad03d343cb67db69897f3bcf9b9f10f522133657e6aeea0cdcb6f" => :sierra
+    sha256 "75827f06aa601d6cc9df2d8caa0d1f7140a5b71902c187cff2ac9bc7ca14ed51" => :el_capitan
+    sha256 "492815aecc46e1a02557e794d787e05076814182d6e37c845944e8c3022c943a" => :yosemite
   end
 
   keg_only :provided_by_osx
