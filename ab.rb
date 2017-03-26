@@ -1,8 +1,8 @@
 class Ab < Formula
   desc "Apache HTTP server benchmarking tool"
   homepage "https://httpd.apache.org/docs/trunk/programs/ab.html"
-  url "https://archive.apache.org/dist/httpd/httpd-2.4.18.tar.bz2"
-  sha256 "0644b050de41f5c9f67c825285049b144690421acb709b06fe53eddfa8a9fd4c"
+  url "https://archive.apache.org/dist/httpd/httpd-2.4.25.tar.bz2"
+  sha256 "f87ec2df1c9fee3e6bfde3c8b855a3ddb7ca1ab20ca877bd0e2b6bf3f05c80b2"
 
   bottle do
     cellar :any
@@ -13,8 +13,6 @@ class Ab < Formula
 
   keg_only :provided_by_osx
 
-  option "with-ssl-patch", 'Apply patch for: Bug 49382 - ab says "SSL read failed"'
-
   depends_on "apr-util"
   depends_on "libtool" => :build
 
@@ -22,14 +20,6 @@ class Ab < Formula
 
   # Disable requirement for PCRE, because "ab" does not use it
   patch :DATA
-
-  # Patch for https://issues.apache.org/bugzilla/show_bug.cgi?id=49382
-  # Upstream has not incorporated the patch. Should keep following
-  # what upstream does about this.
-  patch do
-    url "https://gist.githubusercontent.com/Noctem/a0ba1477dbc11b5108b2/raw/ddf33c8a8b7939bbc3f12a1eb700a12b339d9194/ab-ssl-patch.diff"
-    sha256 "6a71947075f733f73bdedaba27ea4e3c140bec95c63c01ab4f94b6794e0efe1c"
-  end if build.with? "ssl-patch"
 
   def install
     # Mountain Lion requires this to be set, as otherwise libtool complains
