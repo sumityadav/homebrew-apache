@@ -22,7 +22,7 @@ class Httpd24 < Formula
 
   depends_on "openssl"
   depends_on "pcre"
-  depends_on "homebrew/dupes/zlib"
+  depends_on "zlib"
 
   if build.with? "ldap"
     depends_on "apr-util" => "with-openldap"
