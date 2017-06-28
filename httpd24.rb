@@ -1,8 +1,8 @@
 class Httpd24 < Formula
   desc "HTTP server"
   homepage "https://httpd.apache.org/"
-  url "https://archive.apache.org/dist/httpd/httpd-2.4.25.tar.bz2"
-  sha256 "f87ec2df1c9fee3e6bfde3c8b855a3ddb7ca1ab20ca877bd0e2b6bf3f05c80b2"
+  url "https://archive.apache.org/dist/httpd/httpd-2.4.26.tar.bz2"
+  sha256 "a07eb52fafc879e0149d31882f7da63173e72df4478db4dc69f7a775b663d387"
 
   bottle do
     sha256 "d0337466b0b0f843e815afb834d6d6238bdaeb1053dc30e8b8e4b3fe5f1dcdb9" => :sierra

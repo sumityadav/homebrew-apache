@@ -1,8 +1,8 @@
 class Ab < Formula
   desc "Apache HTTP server benchmarking tool"
   homepage "https://httpd.apache.org/docs/trunk/programs/ab.html"
-  url "https://archive.apache.org/dist/httpd/httpd-2.4.25.tar.bz2"
-  sha256 "f87ec2df1c9fee3e6bfde3c8b855a3ddb7ca1ab20ca877bd0e2b6bf3f05c80b2"
+  url "https://archive.apache.org/dist/httpd/httpd-2.4.26.tar.bz2"
+  sha256 "a07eb52fafc879e0149d31882f7da63173e72df4478db4dc69f7a775b663d387"
 
   bottle do
     cellar :any

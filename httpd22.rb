@@ -1,8 +1,8 @@
 class Httpd22 < Formula
   desc "HTTP server"
   homepage "https://httpd.apache.org/"
-  url "https://archive.apache.org/dist/httpd/httpd-2.2.31.tar.bz2"
-  sha256 "f32f9d19f535dac63b06cb55dfc023b40dcd28196b785f79f9346779e22f26ac"
+  url "https://archive.apache.org/dist/httpd/httpd-2.2.32.tar.bz2"
+  sha256 "527bc9d8092d784daf08910dd6c9d2681d6a2325055b2cc69806a0a7df7ed650"
 
   bottle do
     sha256 "b467425b4c729c842953d4974725cf043006c05cdcb2b973daeb9b4ea12f61bc" => :yosemite
